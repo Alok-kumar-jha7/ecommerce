@@ -1,0 +1,142 @@
+[
+    {   "id":1,
+        "name":"Girl tshirt",
+        "price":10.00,
+        "image":"product_01.jpg"
+    },
+    {   "id":2,
+        "name":"Light skyblue tshirt",
+        "price":8.00,
+        "image":"product_02.jpg"
+    },
+    {   "id":3,
+        "name":"Nike lower",
+        "price":10.00,
+        "image":"new.webp"
+    },
+    {   "id":4,
+        "name":"Light blue jeans",
+        "price":25.00,
+        "image":"image5.jpg"
+    },
+    {   "id":5,
+        "name":"White shirt",
+        "price":20.00,
+        "image":"image.webp"
+    },
+    {   "id":6,
+        "name":"Light green shirt",
+        "price":19.00,
+        "image":"image1.jpg"
+    },
+    {   "id":7,
+        "name":"LIght purple shirt",
+        "price":15.00,
+        "image":"image5.webp"
+    },
+    {   "id":8,
+        "name":"Red t-shirt",
+        "price":14.00,
+        "image":"image.png"
+    },
+    {   "id":9,
+        "name":"Round neck printed t-shirt",
+        "price":14.00,
+        "image":"image7.webp"
+    },
+    {   "id":10,
+        "name":"White printed t-shirt",
+        "price":18.00,
+        "image":"image2.jpg"
+    },
+    {   "id":11,
+        "name":"Dark blue jeans",
+        "price":21.00,
+        "image":"images.webp"
+    },
+    {   "id":12,
+        "name":"LIght green cargo",
+        "price":11.00,
+        "image":"image8.webp"
+    },
+    {   "id":13,
+        "name":"Coloured shade cargo",
+        "price":12.00,
+        "image":"image9.webp"
+    },
+    {   "id":14,
+        "name":"Light black jeans",
+        "price":10.00,
+        "image":"help.jpg"
+    },
+    {   "id":15,
+        "name":"Casual shoe",
+        "price":8.00,
+        "image":"vc.webp"
+    },
+    {   "id":16,
+        "name":"Sneaker",
+        "price":6.00,
+        "image":"as.jpg"
+    },
+    {   "id":17,
+        "name":"White printed sneaker",
+        "price":5.00,
+        "image":"ty.webp"
+    },
+    {   "id":18,
+        "name":"Nike shoe",
+        "price":8.00,
+        "image":"bv.webp"
+    },
+    {   "id":19,
+        "name":"Campus shoe",
+        "price":3.00,
+        "image":"t.jpg"
+    },
+    {   "id":20,
+        "name":"White&black sneaker",
+        "price":5.00,
+        "image":"mn.jpg"
+    },
+    {   "id":21,
+        "name":"Nike sports shoe",
+        "price":5.00,
+        "image":"l.jpg"
+    },
+    {   "id":22,
+        "name":"White&grey sneaker",
+        "price":4.00,
+        "image":"jh.jpg"
+    },
+    {   "id":23,
+        "name":"ike sport shoe",
+        "price":3.00,
+        "image":"k.webp"
+    },
+    {   "id":24,
+        "name":"Sports shoe",
+        "price":7.00,
+        "image":"g.webp"
+    },
+    {   "id":25,
+        "name":"Sneakers",
+        "price":5.00,
+        "image":"ab.webp"
+    },
+    {   "id":26,
+        "name":"white&yellow sneaker",
+        "price":6.00,
+        "image":"nv.jpg"
+    },
+    {   "id":27,
+        "name":"Sneaker",
+        "price":4.00,
+        "image":"df.webp"
+    },
+    {   "id":28,
+        "name":"Blue sports shoe",
+        "price":5.00,
+        "image":"z.webp"
+    }
+]

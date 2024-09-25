@@ -1,0 +1,372 @@
+/* Global Styles */
+* {
+    font-family: 'Kanit', sans-serif;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: azure;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #00eaff;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.logo a {
+    margin-left: 20px;
+    font-size: 2rem;
+    color: #ffce00;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav ul {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar .nav ul a:hover {
+    color: greenyellow;
+}
+
+.navbar .menu {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.user-options {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-right: 20px; 
+}
+
+.user-options a {
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Dropdown Menu */
+.drop {
+    display: none;
+    position: absolute;
+    background-color: darkorange;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.drop ul {
+    padding: 10px 0;
+}
+
+.drop ul li {
+    padding: 0.5rem 1rem;
+}
+
+.drop ul li a {
+    color: #fff;
+    display: block;
+}
+
+.drop ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.drop.active {
+    display: block;
+}
+
+/* Search Bar */
+.searchbar {
+    width: 300px;
+    height: 35px; 
+    border-radius: 10px;
+    padding-left: 10px; 
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+#srchbtn {
+    height: 35px;
+    width: 90px;
+    border-radius: 30px;
+    background-color: #ffce00;
+    margin-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+#srchbtn:hover {
+    background-color: #ffd700;
+    transform: scale(1.05);
+}
+
+#srchbtn:active {
+    transform: scale(0.95);
+}
+
+/* Product Listing Styles */
+.product-list {
+    padding: 2rem;
+    transition: transform 0.5s;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.product {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.product p {
+    font-size: 1rem;
+    color: orangered;
+}
+
+.add-to-cart {
+    background-color: darkorange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: greenyellow;
+    color: darkcyan;
+}
+
+/* Cart and Popup Styles */
+.carttab {
+    width: 80%; /* Change to a percentage for responsiveness */
+    max-width: 400px; /* Set a max width */
+    background-color: darkcyan;
+    color: ivory;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: 0.5s;
+}
+
+.carttab h1 {
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+/* Show Cart when body has class .showcart */
+body.showcart .carttab {
+    right: 0;
+}
+
+body.showcart .container {
+    transform: translateX(-250px);
+}
+
+/* Cart Buttons */
+.carttab .btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.carttab .btn button {
+    background-color: #ffd700;
+    border: none;
+    font-family: Poppins;
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+}
+
+#checkout {
+    font-size: large;
+}
+
+.carttab .btn .close {
+    background-color: #eee;
+}
+
+/* List of Items in Cart */
+.carttab .listcart .item img {
+    width: 100%;
+}
+
+.carttab .listcart .item {
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.listcart .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    color: #444;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.listcart .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+}
+
+/* Popup Styles */
+.popup {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    opacity: 0;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -45%); /* Adjust position slightly */
+}
+
+.popup img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    color: #333;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    font-size: 18px;
+    background: deepskyblue;
+    color: #fff;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup button:hover {
+    background-color: lightskyblue;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+    .navbar .nav ul {
+        display: none;
+    }
+
+    .navbar .menu {
+        display: flex;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu .searchbar {
+        display: block;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar .nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .product {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+/* Focus States for Accessibility */
+a:focus, button:focus {
+    outline: 2px solid #00eaff;
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="RhythmusByte" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casualstore.in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Kanit&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="">
+
+
+    <!-- Nav Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Casualstore</a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <a href="#" class="categories-toggle">Categories</a>
+                        <div class="drop" id="categories-dropdown">
+                            <ul>
+                                <li><a href="#">Fashion</a></li>
+                                <li><a href="#">Mobiles</a></li>
+                                <li><a href="#">Electronics</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Offers</a></li>
+                </ul>
+                <div class="menu"><i class="fa-solid fa-bars"></i></div>
+            </div>
+            <input type="text" class="searchbar" placeholder="Search Categories...">
+            <button id="srchbtn" aria-label="Search">Search</button>
+            <div class="user-options">
+                <a href="#" class="account"><i class="fa-solid fa-user"></i> Login</a>
+                <div id="cart-container"> <a href="#" class="cart"><i class="fa-solid fa-shopping-cart"></i> Cart <span
+                            id="cart-count">0</span></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="carttab">
+        <h1>Shopping Cart</h1>
+        <div class="listcart">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="" id="checkout">Checkout</button>
+
+        </div>
+        
+    </div>
+    
+
+    <!-- Nav Bar Ends -->
+
+
+    <!-- Product Listing -->
+    <main class="product-list">
+        <h1>Featured Products</h1>
+        <div class="products">
+            <div class="product" data-id="product-1">
+                <img src="assets/product_01.jpg" alt="Product 1" data-name="Product 1">
+                <h2>Girl tshirt</h2>
+                <p>$10.00</p>
+                <button class="add-to-cart" data-name="Girl tshirt" data-price="10.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-2">
+
+                <img src="assets/product_02.jpg" alt="Product 2" data-name="Product 2">
+
+                <h2>Light skyblue tshirt</h2>
+                <p>$8.00</p>
+                <button class="add-to-cart" data-name="Light skyblue tshirt" data-price="8.00">Add to Cart</button>
+            </div>
+            <div class="product  " data-id="product-3">
+
+                <img src="assets/new.webp" alt="Product 3">
+
+                <h2>Nike lower</h2>
+                <p>$11.00</p>
+                <button class="add-to-cart" data-name="Nike lower" data-price="11.00">Add to Cart</button>
+            </div>
+            <div class="product " data-id="product-4">
+                <img src="assets/image5.jpg" alt="Product 4">
+                <h2>Light blue jeans</h2>
+                <p>$25.00</p>
+                <button class="add-to-cart" data-name="Light blue jeans" data-price="25.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-5">
+
+                <img src="assets/image.webp" alt="Product 5">
+                <h2>White shirt</h2>
+                <p>$20.00</p>
+                <button class="add-to-cart" data-name="White shirt" data-price="20.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-6">
+
+                <img src="assets/image1.jpg" alt="Product 6" >
+                <h2>Light green shirt</h2>
+                <p>$19.00</p>
+                <button class="add-to-cart" data-name="Light green shirt" data-price="19.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-7">
+                <img src="assets/image5.webp" alt="Product 7" >
+                <h2>LIght purple shirt</h2>
+                <p>$15.00</p>
+                <button class="add-to-cart" data-name="LIght purple shirt" data-price="15.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-8">
+
+                <img src="assets/image6.png" alt="Product 8" >
+                <h2>Red t-shirt</h2>
+                <p>$14.00</p>
+                <button class="add-to-cart" data-name="Red t-shirt" data-price="14.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-9">
+                <img src="assets/image7.webp" alt="Product 9" >
+                <h2>Round neck printed t-shirt</h2>
+                <p>$24.00</p>
+                <button class="add-to-cart" data-name="Round neck printed t-shirt" data-price="24.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-10">
+                <img src="assets/image2.jpg" alt="Product 10" >
+                <h2>White printed t-shirt</h2>
+                <p>$18.00</p>
+                <button class="add-to-cart" data-name="White printed t-shirt" data-price="18.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-11">
+
+                <img src="assets/images.webp" alt="Product 11" >
+                <h2>Dark blue jeans</h2>
+                <p>$21.00</p>
+                <button class="add-to-cart" data-name="Dark blue jeans" data-price="21.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-12">
+                <img src="assets/image8.webp" alt="Product 12" >
+                <h2>LIght green cargo</h2>
+                <p>$11.00</p>
+                <button class="add-to-cart" data-name="LIght green cargo" data-price="11.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-13">
+
+                <img src="assets/image9.webp" alt="Product 13" >
+                <h2>Coloured shade cargo</h2>
+                <p>$12.00</p>
+                <button class="add-to-cart" data-name="Coloured shade cargo" data-price="12.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-14">
+
+                <img src="assets/help.jpg" alt="Product 14" >
+                <h2>Light black jeans</h2>
+                <p>$10.00</p>
+                <button class="add-to-cart" data-name="Light black jeans" data-price="10.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-15">
+
+                <img src="assets/vc.webp" alt="Product 15" >
+                <h2>Casual shoe</h2>
+                <p>$8.00</p>
+                <button class="add-to-cart" data-name="Casual shoe" data-price="8.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-16">
+                <img src="assets/as.jpg" alt="Product 16" >
+                <h2>Sneaker</h2>
+                <p>$6.00</p>
+                <button class="add-to-cart" data-name="Sneaker" data-price="6.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-17">
+                <img src="assets/ty.webp" alt="Product 17" >
+                <h2>White printed sneaker</h2>
+                <p>$5.00</p>
+                <button class="add-to-cart" data-name="White printed sneaker" data-price="5.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-18">
+
+                <img src="assets/bv.webp" alt="Product 18" >
+                <h2>Nike shoe</h2>
+                <p>$8.00</p>
+                <button class="add-to-cart" data-name="Nike shoe" data-price="8.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-19">
+                <img src="assets/t.jpg" alt="Product 19" >
+                <h2>Campus shoe</h2>
+                <p>$3.00</p>
+                <button class="add-to-cart" data-name="Campus shoe" data-price="3.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-20">
+
+                <img src="assets/mn.jpg" alt="Product 20" >
+                <h2>White&black sneaker</h2>
+                <p>$5.00</p>
+                <button class="add-to-cart" data-name="White&black sneaker" data-price="5.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-21">
+
+                <img src="assets/l.jpg" alt="Product 21" >
+                <h2>Nike sports shoe</h2>
+                <p>$5.00</p>
+                <button class="add-to-cart" data-name="Nike sports shoe" data-price="5.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-22">
+
+                <img src="assets/jh.jpg" alt="Product 22" >
+                <h2>White&grey sneaker</h2>
+                <p>$4.00</p>
+                <button class="add-to-cart" data-name="White&grey sneaker" data-price="4.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-23">
+                <img src="assets/k.webp" alt="Product 23" >
+                <h2>Nike sport shoe</h2>
+                <p>$3.00</p>
+                <button class="add-to-cart" data-name="Nike sport shoe" data-price="3.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-24">
+                <img src="assets/g.webp" alt="Product 24" >
+                <h2>Sports shoe</h2>
+                <p>$7.00</p>
+                <button class="add-to-cart" data-name="Sports shoe" data-price="7.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-25">
+                <img src="assets/ab.webp" alt="Product 25" >
+                <h2>Sneakers</h2>
+                <p>$5.00</p>
+                <button class="add-to-cart" data-name="Sneakers" data-price="5.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-26">
+
+                <img src="assets/nv.jpg" alt="Product 26" >
+                <h2>White&yellow sneaker</h2>
+
+                <p>6.00</p>
+                <button class="add-to-cart" data-name="White&yellow sneaker" data-price="6.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-27">
+                <img src="assets/df.webp" alt="Product 27" >
+                <h2>Sneaker</h2>
+                <p>$4.00</p>
+                <button class="add-to-cart" data-name="Sneaker" data-price="4.00">Add to Cart</button>
+            </div>
+            <div class="product" data-id="product-28">
+
+                <img src="assets/z.webp" alt="Product 28" data-name="Product 28">
+                <h2>Blue sports shoe</h2>
+                <p>$5.00</p>
+                <button class="add-to-cart" data-name="Blue sports shoe" data-price="5.00">Add to Cart</button>
+            </div>
+
+
+    </main>
+    <div class="popup" id="popup">
+        <img src="assets/tick.jpg" alt="checked">
+        <h2>Your order has been added to cart successfully!</h2>
+        <button type="button" id="butn">OK</button>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
